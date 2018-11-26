@@ -1,12 +1,21 @@
-# class Coin
-#   attr_accessor(:amount, :quarters, :dimes, :nickles, :pennies)
+class Coin
+  attr_accessor(:amount, :quarters, :dimes, :nickels, :pennies)
 
-def coin_counter(number)
-  amount = number
-  quarters = 0
-  dimes = 0
-  nickels = 0
-  pennies = 0
+
+def initialize(number)
+  @amount = number
+  @quarters = quarters
+  @dimes = dimes
+  @nickels = nickels
+  @pennies = pennies
+end
+end
+
+  def coins(amount)
+    quarters = 0
+    dimes = 0
+    nickels = 0
+    pennies = 0
 
   if amount >= 0
     quarters = amount / 25.floor
